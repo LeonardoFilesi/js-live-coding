@@ -33,8 +33,21 @@ function greetings (name, lastname, age) {
 const myResult = dividiDueNumeri(8, 4);
 
 
+/**
+ * Description placeholder
+ * @date 3/16/2023 - 11:52:27 AM
+ *
+ * @param {*} dividendo
+ * @param {*} divisore
+ * @returns {(number | "Errore")}
+ */
 function dividiDueNumeri (dividendo, divisore) {
-    console.log(dividendo, divisore);
-    const result = dividendo / divisore;
-    return result;
+    if (divisore === 0) {
+        return "Errore";
+    } else {
+        console.log(dividendo, divisore);
+        const result = dividendo / divisore;
+        return result;
+    }
+   
 }
